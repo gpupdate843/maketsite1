@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Женская одежда премиум-класса. Бутик Роза.">
+  <title>Женское — Бутик Роза</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header__topbar">
+      <div class="container">Бесплатная доставка при заказе от 15 000 ₽</div>
+    </div>
+    <div class="header__main">
+      <div class="container header__container">
+        <div class="header__logo">
+          <a href="index.html">
+            <svg class="header__logo-icon" viewBox="0 0 40 40" fill="none">
+              <circle cx="20" cy="20" r="8" stroke="currentColor" stroke-width="1.5" fill="none"/>
+              <path d="M20 12C20 12 24 8 20 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M12 20C12 20 8 16 4 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M28 20C28 20 32 16 36 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="20" cy="20" r="3" fill="currentColor"/>
+            </svg>
+            <div>
+              <span class="header__logo-text">Роза</span>
+              <span class="header__logo-tagline">Расцветай с нами</span>
+            </div>
+          </a>
+        </div>
+        <nav class="header__nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="women.html" class="nav-link" style="color: var(--color-green);">Женское</a></li>
+            <li class="nav-item"><a href="men.html" class="nav-link">Мужское</a></li>
+            <li class="nav-item"><a href="collections.html" class="nav-link">Коллекции</a></li>
+            <li class="nav-item"><a href="lookbook.html" class="nav-link">Lookbook</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">О бренде</a></li>
+          </ul>
+        </nav>
+        <div class="header__actions">
+          <button class="header__action-btn" aria-label="Поиск">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="11" cy="11" r="8"/><path d="M21 21L16.65 16.65" stroke-linecap="round"/>
+            </svg>
+          </button>
+          <a href="cart.html" class="header__action-btn" aria-label="Корзина">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M6 6H4.5C3.67 6 3 6.67 3 7.5V19.5C3 20.33 3.67 21 4.5 21H19.5C20.33 21 21 20.33 21 19.5V7.5C21 6.67 20.33 6 19.5 6H18M6 6V5C6 3.34 7.34 2 9 2H15C16.66 2 18 3.34 18 5V6M6 6H18"/>
+            </svg>
+            <span class="header__cart-count">0</span>
+          </a>
+          <button class="header__menu-btn" id="menuBtn" aria-label="Меню">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" style="min-height: 50vh;">
+      <div class="hero__bg">
+        <img src="https://images.unsplash.com/photo-1485968579580-b6d095142e6e?w=1600&q=80" alt="Женская коллекция">
+        <div class="hero__overlay"></div>
+      </div>
+      <div class="container">
+        <div class="hero__content" style="text-align: center; max-width: 800px; margin: 0 auto;">
+          <h1 class="hero__title">Женское</h1>
+          <p class="hero__description">
+            Элегантность и комфорт в каждой детали. Одежда, которая подчёркивает вашу индивидуальность.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-header__subtitle">Категории</span>
+          <h2 class="section-header__title">Выберите категорию</h2>
+        </div>
+        <div class="categories__grid" style="grid-template-columns: repeat(3, 1fr);">
+          <a href="catalog.html" class="category-card">
+            <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=600&q=80" alt="Платья" class="category-card__image">
+            <div class="category-card__overlay">
+              <h3 class="category-card__title">Платья</h3>
+            </div>
+          </a>
+          <a href="catalog.html" class="category-card">
+            <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=600&q=80" alt="Блузы и рубашки" class="category-card__image">
+            <div class="category-card__overlay">
+              <h3 class="category-card__title">Блузы и рубашки</h3>
+            </div>
+          </a>
+          <a href="catalog.html" class="category-card">
+            <img src="https://images.unsplash.com/photo-1506629082955-511b1aa562c8?w=600&q=80" alt="Брюки" class="category-card__image">
+            <div class="category-card__overlay">
+              <h3 class="category-card__title">Брюки</h3>
+            </div>
+          </a>
+          <a href="catalog.html" class="category-card">
+            <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=600&q=80" alt="Юбки" class="category-card__image">
+            <div class="category-card__overlay">
+              <h3 class="category-card__title">Юбки</h3>
+            </div>
+          </a>
+          <a href="catalog.html" class="category-card">
+            <img src="https://images.unsplash.com/photo-1539533018447-63fcce2678e3?w=600&q=80" alt="Верхняя одежда" class="category-card__image">
+            <div class="category-card__overlay">
+              <h3 class="category-card__title">Верхняя одежда</h3>
+            </div>
+          </a>
+          <a href="catalog.html" class="category-card">
+            <img src="https://images.unsplash.com/photo-1551163943-3f6a855d1153?w=600&q=80" alt="Трикотаж" class="category-card__image">
+            <div class="category-card__overlay">
+              <h3 class="category-card__title">Трикотаж</h3>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="section bg-cream">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-header__subtitle">Популярное</span>
+          <h2 class="section-header__title">Хиты продаж</h2>
+        </div>
+        <div class="products__grid">
+          <article class="product-card">
+            <a href="product.html" class="product-card__image">
+              <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=500&q=80" alt="Шёлковое платье Пион">
+              <span class="product-card__badge">Бестселлер</span>
+            </a>
+            <div class="product-card__content">
+              <span class="product-card__category">Платья</span>
+              <h3 class="product-card__title"><a href="product.html">Шёлковое платье «Пион»</a></h3>
+              <div class="product-card__price">24 900 ₽</div>
+            </div>
+          </article>
+          <article class="product-card">
+            <a href="product.html" class="product-card__image">
+              <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=500&q=80" alt="Блуза Камелия">
+              </a>
+              <div class="product-card__content">
+                <span class="product-card__category">Блузы</span>
+                <h3 class="product-card__title"><a href="product.html">Блуза «Камелия»</a></h3>
+              <div class="product-card__price">14 500 ₽</div>
+            </div>
+          </article>
+          <article class="product-card">
+            <a href="product.html" class="product-card__image">
+              <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500&q=80" alt="Платье-миди Весна">
+            </a>
+            <div class="product-card__content">
+              <span class="product-card__category">Платья</span>
+              <h3 class="product-card__title"><a href="product.html">Платье-миди «Весна»</a></h3>
+              <div class="product-card__price">22 100 ₽</div>
+            </div>
+          </article>
+          <article class="product-card">
+            <a href="product.html" class="product-card__image">
+              <img src="https://images.unsplash.com/photo-1551163943-3f6a855d1153?w=500&q=80" alt="Кардиган из мериноса">
+            </a>
+            <div class="product-card__content">
+              <span class="product-card__category">Трикотаж</span>
+              <h3 class="product-card__title"><a href="product.html">Кардиган из мериноса</a></h3>
+              <div class="product-card__price">21 400 ₽</div>
+            </div>
+          </article>
+        </div>
+        <div class="products__actions">
+          <a href="catalog.html" class="btn btn-outline">Смотреть все</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__main">
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo">
+            <svg class="footer__logo-icon" viewBox="0 0 40 40" fill="none">
+              <circle cx="20" cy="20" r="8" stroke="currentColor" stroke-width="1.5" fill="none"/>
+              <path d="M20 12C20 12 24 8 20 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M12 20C12 20 8 16 4 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M28 20C28 20 32 16 36 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="20" cy="20" r="3" fill="currentColor"/>
+            </svg>
+            <span class="footer__logo-text">Роза</span>
+          </a>
+          <p class="footer__tagline">Бутик премиум-одежды для женщин.</p>
+        </div>
+        <div class="footer__column">
+          <h4 class="footer__column-title">Магазин</h4>
+          <nav class="footer__links">
+            <a href="women.html" class="footer__link">Женское</a>
+            <a href="men.html" class="footer__link">Мужское</a>
+            <a href="collections.html" class="footer__link">Коллекции</a>
+          </nav>
+        </div>
+        <div class="footer__column">
+          <h4 class="footer__column-title">Информация</h4>
+          <nav class="footer__links">
+            <a href="about.html" class="footer__link">О бренде</a>
+            <a href="blog.html" class="footer__link">Журнал</a>
+            <a href="contacts.html" class="footer__link">Контакты</a>
+          </nav>
+        </div>
+        <div class="footer__column">
+          <h4 class="footer__column-title">Контакты</h4>
+          <div class="footer__contact-item">
+            <span>+7 (495) 123-45-67</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p class="footer__copyright">© 2026 Бутик Роза. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/components.js"></script>
+</body>
+</html>

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Контакты Бутик Роза. Адрес, телефон, email, форма обратной связи.">
+  <title>Контакты — Бутик Роза</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header__topbar">
+      <div class="container">Бесплатная доставка при заказе от 15 000 ₽</div>
+    </div>
+    <div class="header__main">
+      <div class="container header__container">
+        <div class="header__logo">
+          <a href="index.html">
+            <svg class="header__logo-icon" viewBox="0 0 40 40" fill="none">
+              <circle cx="20" cy="20" r="8" stroke="currentColor" stroke-width="1.5" fill="none"/>
+              <path d="M20 12C20 12 24 8 20 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M12 20C12 20 8 16 4 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M28 20C28 20 32 16 36 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="20" cy="20" r="3" fill="currentColor"/>
+            </svg>
+            <div>
+              <span class="header__logo-text">Роза</span>
+              <span class="header__logo-tagline">Расцветай с нами</span>
+            </div>
+          </a>
+        </div>
+        <nav class="header__nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="women.html" class="nav-link">Женское</a></li>
+            <li class="nav-item"><a href="men.html" class="nav-link">Мужское</a></li>
+            <li class="nav-item"><a href="collections.html" class="nav-link">Коллекции</a></li>
+            <li class="nav-item"><a href="lookbook.html" class="nav-link">Lookbook</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">О бренде</a></li>
+          </ul>
+        </nav>
+        <div class="header__actions">
+          <button class="header__action-btn" aria-label="Поиск">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="11" cy="11" r="8"/><path d="M21 21L16.65 16.65" stroke-linecap="round"/>
+            </svg>
+          </button>
+          <a href="cart.html" class="header__action-btn" aria-label="Корзина">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M6 6H4.5C3.67 6 3 6.67 3 7.5V19.5C3 20.33 3.67 21 4.5 21H19.5C20.33 21 21 20.33 21 19.5V7.5C21 6.67 20.33 6 19.5 6H18M6 6V5C6 3.34 7.34 2 9 2H15C16.66 2 18 3.34 18 5V6M6 6H18"/>
+            </svg>
+            <span class="header__cart-count">0</span>
+          </a>
+          <button class="header__menu-btn" id="menuBtn" aria-label="Меню">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Header Section -->
+    <section class="section" style="padding-bottom: var(--space-8);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-header__subtitle">Связаться с нами</span>
+          <h1 class="section-header__title" style="font-size: var(--text-5xl);">Контакты</h1>
+          <p class="section-header__description">
+            Мы всегда рады ответить на ваши вопросы и помочь с выбором.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Layout -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="contact__layout">
+          <!-- Contact Info -->
+          <div class="contact__info">
+            <div>
+              <h2 class="contact__title">Бутик «Роза»</h2>
+              <p class="contact__text">
+                Приглашаем вас в наш уютный бутик, где вы можете примерить вещи, 
+                получить консультацию стилиста и погрузиться в атмосферу бренда.
+              </p>
+            </div>
+
+            <div class="contact__details">
+              <div class="contact__detail">
+                <svg class="contact__detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 5.02944 7.02944 1 12 1C16.9706 1 21 5.02944 21 10Z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+                <div class="contact__detail-content">
+                  <span class="contact__detail-label">Адрес</span>
+                  <span class="contact__detail-value">Москва, Столешников пер., 7</span>
+                </div>
+              </div>
+
+              <div class="contact__detail">
+                <svg class="contact__detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <circle cx="12" cy="12" r="10"/>
+                  <path d="M12 6V12L16 14"/>
+                </svg>
+                <div class="contact__detail-content">
+                  <span class="contact__detail-label">Время работы</span>
+                  <span class="contact__detail-value">Пн-Сб: 11:00 — 21:00</span>
+                  <span class="contact__detail-value">Вс: 12:00 — 20:00</span>
+                </div>
+              </div>
+
+              <div class="contact__detail">
+                <svg class="contact__detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M22 16.92V19.92C22 20.48 21.56 20.93 21 20.98C20.83 21 20.66 21 20.5 21C10.84 21 3 13.16 3 3.5C3 3.34 3 3.17 3.02 3C3.07 2.44 3.52 2 4.08 2H7.08"/>
+                </svg>
+                <div class="contact__detail-content">
+                  <span class="contact__detail-label">Телефон</span>
+                  <span class="contact__detail-value">+7 (495) 123-45-67</span>
+                </div>
+              </div>
+
+              <div class="contact__detail">
+                <svg class="contact__detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <rect x="2" y="4" width="20" height="16" rx="2"/>
+                  <path d="M22 6L12 13L2 6"/>
+                </svg>
+                <div class="contact__detail-content">
+                  <span class="contact__detail-label">Email</span>
+                  <span class="contact__detail-value">hello@boutique-rosa.ru</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social -->
+            <div>
+              <span class="contact__detail-label" style="display: block; margin-bottom: var(--space-4);">Мы в соцсетях</span>
+              <div class="footer__social">
+                <a href="#" class="footer__social-link" aria-label="Instagram">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <rect x="2" y="2" width="20" height="20" rx="5"/>
+                    <circle cx="12" cy="12" r="4"/>
+                    <circle cx="18" cy="6" r="1" fill="currentColor"/>
+                  </svg>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="Telegram">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13"/>
+                  </svg>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="VK">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M4 8H7C7 14 10 16 14 16V13C12 13 10 11 10 8H14V4H4V8Z"/>
+                    <path d="M14 16C14 16 17 16 18 14C18 14 20 18 22 20H18C16 18 14 16 14 16Z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Map Placeholder -->
+            <div class="contact__map" style="display: flex; align-items: center; justify-content: center; background-color: var(--color-bg-cream);">
+              <div style="text-align: center; color: var(--color-text-secondary);">
+                <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1" style="margin: 0 auto var(--space-3);">
+                  <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 5.02944 7.02944 1 12 1C16.9706 1 21 5.02944 21 10Z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+                <p>Карта (Яндекс.Карты или Google Maps)</p>
+                <p style="font-size: var(--text-sm);">ул. Пречистенка, 15, Москва</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact__form-wrapper">
+            <h3 class="contact__form-title">Напишите нам</h3>
+            <form id="contactForm">
+              <div class="form-group">
+                <label class="form-label" for="name">Ваше имя *</label>
+                <input type="text" id="name" class="form-input" placeholder="Как вас зовут?" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="email">Email *</label>
+                <input type="email" id="email" class="form-input" placeholder="example@email.com" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="phone">Телефон</label>
+                <input type="tel" id="phone" class="form-input" placeholder="+7 (___) ___-__-__">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="subject">Тема обращения</label>
+                <select id="subject" class="form-select">
+                  <option value="">Выберите тему</option>
+                  <option value="order">Вопрос по заказу</option>
+                  <option value="product">Вопрос о товаре</option>
+                  <option value="styling">Консультация стилиста</option>
+                  <option value="cooperation">Сотрудничество</option>
+                  <option value="other">Другое</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="message">Сообщение *</label>
+                <textarea id="message" class="form-textarea" rows="5" placeholder="Ваше сообщение..." required></textarea>
+              </div>
+              <label class="form-checkbox" style="margin-bottom: var(--space-6);">
+                <input type="checkbox" required>
+                <span style="font-size: var(--text-sm); color: var(--color-text-secondary);">
+                  Я согласен с <a href="#" style="color: var(--color-green);">политикой конфиденциальности</a>
+                </span>
+              </label>
+              <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Отправить сообщение</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section bg-cream">
+      <div class="container" style="max-width: 800px;">
+        <div class="section-header">
+          <span class="section-header__subtitle">FAQ</span>
+          <h2 class="section-header__title">Частые вопросы</h2>
+        </div>
+        
+        <div class="accordion-item active">
+          <button class="accordion-header">
+            Как оформить заказ?
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M6 9L12 15L18 9" stroke-linecap="round"/>
+            </svg>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-content__inner">
+              Добавьте понравившиеся товары в корзину, перейдите к оформлению и заполните данные для доставки. 
+              Мы свяжемся с вами для подтверждения заказа.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            Какие способы оплаты доступны?
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M6 9L12 15L18 9" stroke-linecap="round"/>
+            </svg>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-content__inner">
+              Мы принимаем банковские карты (Visa, Mastercard, МИР), оплату через СБП, 
+              а также наличные при самовывозе из бутика.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            Как работает доставка?
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M6 9L12 15L18 9" stroke-linecap="round"/>
+            </svg>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-content__inner">
+              Доставка по Москве — 2-3 рабочих дня (бесплатно при заказе от 15 000 ₽). 
+              По России — 5-10 рабочих дней через СДЭК или Почту России.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            Можно ли вернуть или обменять товар?
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M6 9L12 15L18 9" stroke-linecap="round"/>
+            </svg>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-content__inner">
+              Да, вы можете вернуть или обменять товар в течение 14 дней с момента получения. 
+              Вещь должна сохранить товарный вид и все бирки.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__main">
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo">
+            <svg class="footer__logo-icon" viewBox="0 0 40 40" fill="none">
+              <circle cx="20" cy="20" r="8" stroke="currentColor" stroke-width="1.5" fill="none"/>
+              <path d="M20 12C20 12 24 8 20 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M12 20C12 20 8 16 4 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M28 20C28 20 32 16 36 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="20" cy="20" r="3" fill="currentColor"/>
+            </svg>
+            <span class="footer__logo-text">Роза</span>
+          </a>
+          <p class="footer__tagline">Бутик премиум-одежды для женщин.</p>
+        </div>
+        <div class="footer__column">
+          <h4 class="footer__column-title">Магазин</h4>
+          <nav class="footer__links">
+            <a href="women.html" class="footer__link">Женское</a>
+            <a href="men.html" class="footer__link">Мужское</a>
+            <a href="collections.html" class="footer__link">Коллекции</a>
+          </nav>
+        </div>
+        <div class="footer__column">
+          <h4 class="footer__column-title">Информация</h4>
+          <nav class="footer__links">
+            <a href="about.html" class="footer__link">О бренде</a>
+            <a href="blog.html" class="footer__link">Журнал</a>
+            <a href="contacts.html" class="footer__link">Контакты</a>
+          </nav>
+        </div>
+        <div class="footer__column">
+          <h4 class="footer__column-title">Контакты</h4>
+          <div class="footer__contact-item">
+            <span>+7 (495) 123-45-67</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p class="footer__copyright">© 2026 Бутик Роза. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/components.js"></script>
+</body>
+</html>

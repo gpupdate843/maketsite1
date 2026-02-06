@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Бутик Роза — премиум-одежда для женщин. Элегантность, утончённость и расцвет вашей красоты.">
+  <title>Бутик Роза — Премиум-одежда</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <!-- Top Bar -->
+    <div class="header__topbar">
+      <div class="container">
+        Бесплатная доставка при заказе от 15 000 ₽
+      </div>
+    </div>
+    
+    <!-- Main Header -->
+    <div class="header__main">
+      <div class="container header__container">
+        <!-- Logo -->
+        <div class="header__logo">
+          <a href="index.html">
+            <svg class="header__logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="20" r="8" stroke="currentColor" stroke-width="1.5" fill="none"/>
+              <path d="M20 12C20 12 24 8 20 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M12 20C12 20 8 16 4 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M28 20C28 20 32 16 36 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M20 28C20 28 24 32 20 36" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M14 14C14 14 10 10 6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M26 14C26 14 30 10 34 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="20" cy="20" r="3" fill="currentColor"/>
+            </svg>
+            <div>
+              <span class="header__logo-text">Роза</span>
+              <span class="header__logo-tagline">Расцветай с нами</span>
+            </div>
+          </a>
+        </div>
+        
+        <!-- Navigation -->
+        <nav class="header__nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="women.html" class="nav-link">
+                Женское
+                <svg viewBox="0 0 12 12" fill="none"><path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </a>
+              <div class="nav-dropdown">
+                <a href="catalog.html" class="nav-dropdown__link">Платья</a>
+                <a href="catalog.html" class="nav-dropdown__link">Блузы и рубашки</a>
+                <a href="catalog.html" class="nav-dropdown__link">Брюки</a>
+                <a href="catalog.html" class="nav-dropdown__link">Юбки</a>
+                <a href="catalog.html" class="nav-dropdown__link">Верхняя одежда</a>
+                <a href="catalog.html" class="nav-dropdown__link">Трикотаж</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="men.html" class="nav-link">
+                Мужское
+                <svg viewBox="0 0 12 12" fill="none"><path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </a>
+              <div class="nav-dropdown">
+                <a href="catalog.html" class="nav-dropdown__link">Рубашки</a>
+                <a href="catalog.html" class="nav-dropdown__link">Брюки</a>
+                <a href="catalog.html" class="nav-dropdown__link">Пиджаки</a>
+                <a href="catalog.html" class="nav-dropdown__link">Верхняя одежда</a>
+                <a href="catalog.html" class="nav-dropdown__link">Трикотаж</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="collections.html" class="nav-link">Коллекции</a>
+            </li>
+            <li class="nav-item">
+              <a href="lookbook.html" class="nav-link">Lookbook</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">О бренде</a>
+            </li>
+          </ul>
+        </nav>
+        
+        <!-- Actions -->
+        <div class="header__actions">
+          <button class="header__action-btn" id="searchBtn" aria-label="Поиск">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="11" cy="11" r="8"/>
+              <path d="M21 21L16.65 16.65" stroke-linecap="round"/>
+            </svg>
+          </button>
+          <a href="cart.html" class="header__action-btn" aria-label="Корзина">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M6 6H4.5C3.67157 6 3 6.67157 3 7.5V19.5C3 20.3284 3.67157 21 4.5 21H19.5C20.3284 21 21 20.3284 21 19.5V7.5C21 6.67157 20.3284 6 19.5 6H18M6 6V5C6 3.34315 7.34315 2 9 2H15C16.6569 2 18 3.34315 18 5V6M6 6H18"/>
+            </svg>
+            <span class="header__cart-count" id="cartCount">0</span>
+          </a>
+          <button class="header__menu-btn" id="menuBtn" aria-label="Меню">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav" id="mobileNav">
+    <button class="mobile-nav__close" id="mobileNavClose" aria-label="Закрыть меню">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M18 6L6 18M6 6L18 18" stroke-linecap="round"/>
+      </svg>
+    </button>
+    <ul class="mobile-nav__list">
+      <li class="mobile-nav__item">
+        <a href="women.html" class="mobile-nav__link">
+          Женское
+          <svg viewBox="0 0 12 12" fill="none"><path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </a>
+        <div class="mobile-nav__submenu">
+          <a href="catalog.html" class="mobile-nav__sublink">Платья</a>
+          <a href="catalog.html" class="mobile-nav__sublink">Блузы и рубашки</a>
+          <a href="catalog.html" class="mobile-nav__sublink">Брюки</a>
+          <a href="catalog.html" class="mobile-nav__sublink">Юбки</a>
+        </div>
+      </li>
+      <li class="mobile-nav__item">
+        <a href="men.html" class="mobile-nav__link">
+          Мужское
+          <svg viewBox="0 0 12 12" fill="none"><path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </a>
+        <div class="mobile-nav__submenu">
+          <a href="catalog.html" class="mobile-nav__sublink">Рубашки</a>
+          <a href="catalog.html" class="mobile-nav__sublink">Брюки</a>
+          <a href="catalog.html" class="mobile-nav__sublink">Пиджаки</a>
+        </div>
+      </li>
+      <li class="mobile-nav__item">
+        <a href="collections.html" class="mobile-nav__link">Коллекции</a>
+      </li>
+      <li class="mobile-nav__item">
+        <a href="lookbook.html" class="mobile-nav__link">Lookbook</a>
+      </li>
+      <li class="mobile-nav__item">
+        <a href="about.html" class="mobile-nav__link">О бренде</a>
+      </li>
+      <li class="mobile-nav__item">
+        <a href="blog.html" class="mobile-nav__link">Журнал</a>
+      </li>
+      <li class="mobile-nav__item">
+        <a href="contacts.html" class="mobile-nav__link">Контакты</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Search Overlay -->
+  <div class="search-overlay" id="searchOverlay">
+    <button class="search-overlay__close" id="searchClose" aria-label="Закрыть поиск">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M18 6L6 18M6 6L18 18" stroke-linecap="round"/>
+      </svg>
+    </button>
+    <form class="search-overlay__form">
+      <input type="search" class="search-overlay__input" placeholder="Что вы ищете?" aria-label="Поиск">
+    </form>
+  </div>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero__bg">
+        <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=1600&q=80" alt="Премиум одежда">
+        <div class="hero__overlay"></div>
+      </div>
+      <div class="hero__decoration"></div>
+      <div class="container">
+        <div class="hero__content">
+          <span class="hero__subtitle">Новая коллекция 2026</span>
+          <h1 class="hero__title">Бутик Роза.<br>Расцветай с нами</h1>
+          <p class="hero__description">
+            Откройте для себя элегантность, которая раскрывает вашу красоту. 
+            Как роза расцветает в саду, так и вы — в нашей одежде.
+          </p>
+          <div class="hero__actions">
+            <a href="collections.html" class="btn btn-primary btn-lg">Смотреть коллекцию</a>
+            <a href="about.html" class="btn btn-secondary btn-lg">О бренде</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section class="section philosophy">
+      <div class="container">
+        <div class="philosophy__grid">
+          <div class="philosophy__image">
+            <img src="https://images.unsplash.com/photo-1558171813-4c088753af8f?w=800&q=80" alt="Философия бренда">
+            <div class="philosophy__image-decoration"></div>
+          </div>
+          <div class="philosophy__content">
+            <span class="section-header__subtitle">Философия</span>
+            <blockquote class="philosophy__quote">
+              «Как роза раскрывает свои лепестки навстречу солнцу, так и женщина расцветает в прекрасной одежде»
+            </blockquote>
+            <p class="philosophy__text">
+              Бутик «Роза» — это история о женственности и элегантности. Мы верим, что каждая женщина — 
+              это цветок, которому нужна правильная оправа. Наша одежда создана, чтобы подчеркнуть 
+              вашу природную красоту и придать уверенности.
+            </p>
+            <p class="philosophy__text">
+              Мы используем только премиальные ткани — итальянский шёлк, французское кружево, кашемир. 
+              Каждая деталь продумана, каждый шов безупречен.
+            </p>
+            <a href="about.html" class="btn btn-outline">Узнать больше</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="section categories bg-cream">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-header__subtitle">Категории</span>
+          <h2 class="section-header__title">Найдите своё</h2>
+        </div>
+        <div class="categories__grid">
+          <a href="women.html" class="category-card">
+            <img src="https://images.unsplash.com/photo-1485968579580-b6d095142e6e?w=600&q=80" alt="Женское" class="category-card__image">
+            <div class="category-card__overlay">
+              <h3 class="category-card__title">Женское</h3>
+            </div>
+          </a>
+          <a href="men.html" class="category-card">
+            <img src="https://images.unsplash.com/photo-1507680434567-5739c80be1ac?w=600&q=80" alt="Мужское" class="category-card__image">
+            <div class="category-card__overlay">
+              <h3 class="category-card__title">Мужское</h3>
+            </div>
+          </a>
+          <a href="collections.html" class="category-card">
+            <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?w=600&q=80" alt="Новая коллекция" class="category-card__image">
+            <div class="category-card__overlay">
+              <h3 class="category-card__title">Коллекции</h3>
+            </div>
+          </a>
+          <a href="catalog.html?filter=new" class="category-card">
+            <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=600&q=80" alt="Новинки" class="category-card__image">
+            <div class="category-card__overlay">
+              <h3 class="category-card__title">Новинки</h3>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bestsellers Section -->
+    <section class="section bestsellers">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-header__subtitle">Бестселлеры</span>
+          <h2 class="section-header__title">Выбор покупателей</h2>
+          <p class="section-header__description">
+            Вещи, которые полюбились нашим клиентам больше всего
+          </p>
+        </div>
+        <div class="products__grid">
+          <!-- Product 1 -->
+          <article class="product-card">
+            <a href="product.html" class="product-card__image">
+              <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=500&q=80" alt="Шёлковое платье Пион">
+              <span class="product-card__badge">Бестселлер</span>
+              <button class="product-card__wishlist" aria-label="Добавить в избранное">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M12 21C12 21 3 13.5 3 8.5C3 5.42 5.42 3 8.5 3C10.24 3 11.91 3.81 13 5.08C14.09 3.81 15.76 3 17.5 3C20.58 3 23 5.42 23 8.5C23 13.5 14 21 14 21" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </a>
+            <div class="product-card__content">
+              <span class="product-card__category">Платья</span>
+              <h3 class="product-card__title"><a href="product.html">Шёлковое платье «Пион»</a></h3>
+              <div class="product-card__price">24 900 ₽</div>
+            </div>
+          </article>
+          
+          <!-- Product 2 -->
+          <article class="product-card">
+            <a href="product.html" class="product-card__image">
+              <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=500&q=80" alt="Блуза Камелия">
+              <button class="product-card__wishlist" aria-label="Добавить в избранное">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M12 21C12 21 3 13.5 3 8.5C3 5.42 5.42 3 8.5 3C10.24 3 11.91 3.81 13 5.08C14.09 3.81 15.76 3 17.5 3C20.58 3 23 5.42 23 8.5C23 13.5 14 21 14 21" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </a>
+            <div class="product-card__content">
+              <span class="product-card__category">Блузы</span>
+              <h3 class="product-card__title"><a href="product.html">Блуза «Камелия»</a></h3>
+              <div class="product-card__price">16 500 ₽</div>
+            </div>
+          </article>
+          
+          <!-- Product 3 -->
+          <article class="product-card">
+            <a href="product.html" class="product-card__image">
+              <img src="https://images.unsplash.com/photo-1506629082955-511b1aa562c8?w=500&q=80" alt="Брюки палаццо">
+              <span class="product-card__badge">New</span>
+              <button class="product-card__wishlist" aria-label="Добавить в избранное">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M12 21C12 21 3 13.5 3 8.5C3 5.42 5.42 3 8.5 3C10.24 3 11.91 3.81 13 5.08C14.09 3.81 15.76 3 17.5 3C20.58 3 23 5.42 23 8.5C23 13.5 14 21 14 21" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </a>
+            <div class="product-card__content">
+              <span class="product-card__category">Брюки</span>
+              <h3 class="product-card__title"><a href="product.html">Брюки палаццо</a></h3>
+              <div class="product-card__price">15 300 ₽</div>
+            </div>
+          </article>
+          
+          <!-- Product 4 -->
+          <article class="product-card">
+            <a href="product.html" class="product-card__image">
+              <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=500&q=80" alt="Жакет Орхидея">
+              <button class="product-card__wishlist" aria-label="Добавить в избранное">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M12 21C12 21 3 13.5 3 8.5C3 5.42 5.42 3 8.5 3C10.24 3 11.91 3.81 13 5.08C14.09 3.81 15.76 3 17.5 3C20.58 3 23 5.42 23 8.5C23 13.5 14 21 14 21" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </a>
+            <div class="product-card__content">
+              <span class="product-card__category">Жакеты</span>
+              <h3 class="product-card__title"><a href="product.html">Жакет «Орхидея»</a></h3>
+              <div class="product-card__price">32 700 ₽</div>
+            </div>
+          </article>
+          
+          <!-- Product 5 -->
+          <article class="product-card">
+            <a href="product.html" class="product-card__image">
+              <img src="https://images.unsplash.com/photo-1551163943-3f6a855d1153?w=500&q=80" alt="Кардиган кашемир">
+              <button class="product-card__wishlist" aria-label="Добавить в избранное">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M12 21C12 21 3 13.5 3 8.5C3 5.42 5.42 3 8.5 3C10.24 3 11.91 3.81 13 5.08C14.09 3.81 15.76 3 17.5 3C20.58 3 23 5.42 23 8.5C23 13.5 14 21 14 21" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </a>
+            <div class="product-card__content">
+              <span class="product-card__category">Трикотаж</span>
+              <h3 class="product-card__title"><a href="product.html">Кардиган кашемир</a></h3>
+              <div class="product-card__price">28 400 ₽</div>
+            </div>
+          </article>
+          
+          <!-- Product 6 -->
+          <article class="product-card">
+            <a href="product.html" class="product-card__image">
+              <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500&q=80" alt="Платье Магнолия">
+              <span class="product-card__badge">Новинка</span>
+              <button class="product-card__wishlist" aria-label="Добавить в избранное">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M12 21C12 21 3 13.5 3 8.5C3 5.42 5.42 3 8.5 3C10.24 3 11.91 3.81 13 5.08C14.09 3.81 15.76 3 17.5 3C20.58 3 23 5.42 23 8.5C23 13.5 14 21 14 21" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </a>
+            <div class="product-card__content">
+              <span class="product-card__category">Платья</span>
+              <h3 class="product-card__title"><a href="product.html">Платье «Магнолия»</a></h3>
+              <div class="product-card__price">21 200 ₽</div>
+            </div>
+          </article>
+        </div>
+        <div class="products__actions">
+          <a href="catalog.html" class="btn btn-outline">Смотреть все товары</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="section newsletter">
+      <div class="container">
+        <svg class="newsletter__icon" viewBox="0 0 60 60" fill="none">
+          <circle cx="30" cy="30" r="12" stroke="currentColor" stroke-width="1.5" fill="none"/>
+          <path d="M30 18C30 18 36 12 30 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M18 30C18 30 12 24 4 30" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M42 30C42 30 48 24 56 30" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M30 42C30 42 36 48 30 56" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <circle cx="30" cy="30" r="5" fill="currentColor"/>
+        </svg>
+        <h2 class="newsletter__title">Присоединяйтесь к нашему саду</h2>
+        <p class="newsletter__text">
+          Подпишитесь на рассылку и узнавайте первыми о новых коллекциях, 
+          эксклюзивных предложениях и модных событиях.
+        </p>
+        <form class="newsletter-form">
+          <input type="email" class="form-input" placeholder="Ваш email" required>
+          <button type="submit" class="btn btn-green">Подписаться</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__main">
+        <!-- Brand -->
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo">
+            <svg class="footer__logo-icon" viewBox="0 0 40 40" fill="none">
+              <circle cx="20" cy="20" r="8" stroke="currentColor" stroke-width="1.5" fill="none"/>
+              <path d="M20 12C20 12 24 8 20 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M12 20C12 20 8 16 4 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M28 20C28 20 32 16 36 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="20" cy="20" r="3" fill="currentColor"/>
+            </svg>
+            <span class="footer__logo-text">Роза</span>
+          </a>
+          <p class="footer__tagline">
+            Бутик премиум-одежды для женщин. 
+            Расцветайте вместе с нами.
+          </p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="2" y="2" width="20" height="20" rx="5"/>
+                <circle cx="12" cy="12" r="4"/>
+                <circle cx="18" cy="6" r="1" fill="currentColor"/>
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Telegram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13"/>
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="VK">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M4 8H7C7 14 10 16 14 16V13C12 13 10 11 10 8H14V4H4V8Z"/>
+                <path d="M14 16C14 16 17 16 18 14C18 14 20 18 22 20H18C16 18 14 16 14 16Z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Shop Links -->
+        <div class="footer__column">
+          <h4 class="footer__column-title">Магазин</h4>
+          <nav class="footer__links">
+            <a href="women.html" class="footer__link">Женское</a>
+            <a href="men.html" class="footer__link">Мужское</a>
+            <a href="collections.html" class="footer__link">Коллекции</a>
+            <a href="catalog.html?filter=new" class="footer__link">Новинки</a>
+            <a href="catalog.html?filter=sale" class="footer__link">Распродажа</a>
+          </nav>
+        </div>
+        
+        <!-- Info Links -->
+        <div class="footer__column">
+          <h4 class="footer__column-title">Информация</h4>
+          <nav class="footer__links">
+            <a href="about.html" class="footer__link">О бренде</a>
+            <a href="blog.html" class="footer__link">Журнал</a>
+            <a href="#" class="footer__link">Доставка и оплата</a>
+            <a href="#" class="footer__link">Возврат и обмен</a>
+            <a href="#" class="footer__link">Уход за изделиями</a>
+          </nav>
+        </div>
+        
+        <!-- Contact -->
+        <div class="footer__column">
+          <h4 class="footer__column-title">Контакты</h4>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 5.02944 7.02944 1 12 1C16.9706 1 21 5.02944 21 10Z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            <span>Москва, Столешников пер., 7</span>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M22 16.92V19.92C22 20.48 21.56 20.93 21 20.98C20.83 21 20.66 21 20.5 21C10.84 21 3 13.16 3 3.5C3 3.34 3 3.17 3.02 3C3.07 2.44 3.52 2 4.08 2H7.08C7.56 2 7.97 2.34 8.06 2.81C8.14 3.24 8.26 3.66 8.43 4.06C8.55 4.36 8.48 4.7 8.25 4.93L6.91 6.27C8.21 8.69 10.31 10.79 12.73 12.09L14.07 10.75C14.3 10.52 14.64 10.45 14.94 10.57C15.34 10.74 15.76 10.86 16.19 10.94C16.66 11.03 17 11.44 17 11.92V14.92C17 15.48 16.56 15.93 16 15.98"/>
+            </svg>
+            <span>+7 (495) 123-45-67</span>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="4" width="20" height="16" rx="2"/>
+              <path d="M22 6L12 13L2 6"/>
+            </svg>
+            <span>hello@boutique-rosa.ru</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Footer Bottom -->
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p class="footer__copyright">© 2026 Бутик Роза. Все права защищены.</p>
+        <div class="footer__legal">
+          <a href="#" class="footer__legal-link">Политика конфиденциальности</a>
+          <a href="#" class="footer__legal-link">Оферта</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/components.js"></script>
+</body>
+</html>

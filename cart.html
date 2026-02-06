@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Корзина — Бутик Роза">
+  <title>Корзина — Бутик Роза</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header__topbar">
+      <div class="container">Бесплатная доставка при заказе от 15 000 ₽</div>
+    </div>
+    <div class="header__main">
+      <div class="container header__container">
+        <div class="header__logo">
+          <a href="index.html">
+            <svg class="header__logo-icon" viewBox="0 0 40 40" fill="none">
+              <circle cx="20" cy="20" r="8" stroke="currentColor" stroke-width="1.5" fill="none"/>
+              <path d="M20 12C20 12 24 8 20 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M12 20C12 20 8 16 4 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M28 20C28 20 32 16 36 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="20" cy="20" r="3" fill="currentColor"/>
+            </svg>
+            <div>
+              <span class="header__logo-text">Роза</span>
+              <span class="header__logo-tagline">Расцветай с нами</span>
+            </div>
+          </a>
+        </div>
+        <nav class="header__nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="women.html" class="nav-link">Женское</a></li>
+            <li class="nav-item"><a href="men.html" class="nav-link">Мужское</a></li>
+            <li class="nav-item"><a href="collections.html" class="nav-link">Коллекции</a></li>
+            <li class="nav-item"><a href="lookbook.html" class="nav-link">Lookbook</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">О бренде</a></li>
+          </ul>
+        </nav>
+        <div class="header__actions">
+          <button class="header__action-btn" aria-label="Поиск">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="11" cy="11" r="8"/><path d="M21 21L16.65 16.65" stroke-linecap="round"/>
+            </svg>
+          </button>
+          <a href="cart.html" class="header__action-btn" aria-label="Корзина" style="color: var(--color-green);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M6 6H4.5C3.67 6 3 6.67 3 7.5V19.5C3 20.33 3.67 21 4.5 21H19.5C20.33 21 21 20.33 21 19.5V7.5C21 6.67 20.33 6 19.5 6H18M6 6V5C6 3.34 7.34 2 9 2H15C16.66 2 18 3.34 18 5V6M6 6H18"/>
+            </svg>
+            <span class="header__cart-count" id="cartCount">2</span>
+          </a>
+          <button class="header__menu-btn" id="menuBtn" aria-label="Меню">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="cart-page">
+    <div class="container">
+      <!-- Breadcrumbs -->
+      <nav class="breadcrumbs" style="margin-bottom: var(--space-6);">
+        <a href="index.html">Главная</a>
+        <span class="breadcrumbs__separator">/</span>
+        <span>Корзина</span>
+      </nav>
+
+      <h1 style="font-size: var(--text-4xl); margin-bottom: var(--space-8);">Корзина</h1>
+
+      <!-- Cart with items -->
+      <div class="cart__layout" id="cartWithItems">
+        <!-- Cart Items -->
+        <div class="cart__items">
+          <!-- Item 1 -->
+          <div class="cart-item">
+            <a href="product.html" class="cart-item__image">
+              <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=300&q=80" alt="Шёлковое платье Пион">
+            </a>
+            <div class="cart-item__info">
+              <h3 class="cart-item__title"><a href="product.html">Шёлковое платье «Пион»</a></h3>
+              <p class="cart-item__details">Размер: M • Цвет: Пудровый</p>
+              <div class="cart-item__price" style="display: none;">24 900 ₽</div>
+              <button class="cart-item__remove">Удалить</button>
+            </div>
+            <div class="quantity-selector" style="height: fit-content;">
+              <button type="button" aria-label="Уменьшить">−</button>
+              <input type="number" value="1" min="1" max="10" aria-label="Количество">
+              <button type="button" aria-label="Увеличить">+</button>
+            </div>
+            <div class="cart-item__price" style="font-weight: var(--font-medium); text-align: right; min-width: 100px;">
+              24 900 ₽
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="cart-item">
+            <a href="product.html" class="cart-item__image">
+              <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=300&q=80" alt="Блуза Камелия">
+            </a>
+            <div class="cart-item__info">
+              <h3 class="cart-item__title"><a href="product.html">Блуза «Камелия»</a></h3>
+              <p class="cart-item__details">Размер: S • Цвет: Слоновая кость</p>
+              <button class="cart-item__remove">Удалить</button>
+            </div>
+            <div class="quantity-selector" style="height: fit-content;">
+              <button type="button" aria-label="Уменьшить">−</button>
+              <input type="number" value="1" min="1" max="10" aria-label="Количество">
+              <button type="button" aria-label="Увеличить">+</button>
+            </div>
+            <div class="cart-item__price" style="font-weight: var(--font-medium); text-align: right; min-width: 100px;">
+              16 500 ₽
+            </div>
+          </div>
+        </div>
+
+        <!-- Cart Summary -->
+        <div class="cart__summary">
+          <h2 class="cart__summary-title">Ваш заказ</h2>
+          
+          <div class="cart__summary-row">
+            <span>Товары (2)</span>
+            <span>41 400 ₽</span>
+          </div>
+          <div class="cart__summary-row">
+            <span>Доставка</span>
+            <span style="color: var(--color-green);">Бесплатно</span>
+          </div>
+          <div class="cart__summary-row cart__summary-row--total">
+            <span>Итого</span>
+            <span>41 400 ₽</span>
+          </div>
+
+          <div class="cart__summary-actions">
+            <button class="btn btn-primary btn-lg">Оформить заказ</button>
+            <a href="catalog.html" class="btn btn-secondary">Продолжить покупки</a>
+          </div>
+
+          <div style="margin-top: var(--space-6); padding-top: var(--space-6); border-top: 1px solid var(--color-border);">
+            <label class="form-label" style="margin-bottom: var(--space-3);">Промокод</label>
+            <div style="display: flex; gap: var(--space-2);">
+              <input type="text" class="form-input" placeholder="Введите код" style="flex: 1;">
+              <button class="btn btn-secondary">Применить</button>
+            </div>
+          </div>
+
+          <div style="margin-top: var(--space-6); padding: var(--space-4); background-color: rgba(122, 154, 109, 0.1); border-radius: var(--radius-sm);">
+            <div style="display: flex; align-items: center; gap: var(--space-3);">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--color-green)" stroke-width="1.5">
+                <path d="M12 2C12 2 4 6 4 12C4 18 12 22 12 22C12 22 20 18 20 12C20 6 12 2 12 2Z"/>
+                <path d="M12 8V12M12 16H12.01"/>
+              </svg>
+              <span style="font-size: var(--text-sm); color: var(--color-text-secondary);">
+                Бесплатная доставка при заказе от 15 000 ₽
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Empty Cart (hidden by default) -->
+      <div class="cart-empty" id="cartEmpty" style="display: none;">
+        <svg class="cart-empty__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+          <path d="M6 6H4.5C3.67 6 3 6.67 3 7.5V19.5C3 20.33 3.67 21 4.5 21H19.5C20.33 21 21 20.33 21 19.5V7.5C21 6.67 20.33 6 19.5 6H18M6 6V5C6 3.34 7.34 2 9 2H15C16.66 2 18 3.34 18 5V6M6 6H18"/>
+          <path d="M9 11L15 17M15 11L9 17" stroke-linecap="round"/>
+        </svg>
+        <h2 class="cart-empty__title">Корзина пуста</h2>
+        <p class="cart-empty__text">Добавьте товары, чтобы оформить заказ</p>
+        <a href="catalog.html" class="btn btn-primary btn-lg">Перейти в каталог</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- You may also like -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-header__subtitle">Рекомендуем</span>
+        <h2 class="section-header__title">Вам может понравиться</h2>
+      </div>
+      <div class="products__grid" style="grid-template-columns: repeat(4, 1fr);">
+        <article class="product-card">
+          <a href="product.html" class="product-card__image">
+            <img src="https://images.unsplash.com/photo-1506629082955-511b1aa562c8?w=500&q=80" alt="Брюки из органического хлопка">
+          </a>
+          <div class="product-card__content">
+            <span class="product-card__category">Брюки</span>
+            <h3 class="product-card__title"><a href="product.html">Брюки из органического хлопка</a></h3>
+            <div class="product-card__price">12 300 ₽</div>
+          </div>
+        </article>
+        <article class="product-card">
+          <a href="product.html" class="product-card__image">
+            <img src="https://images.unsplash.com/photo-1551163943-3f6a855d1153?w=500&q=80" alt="Кардиган из мериноса">
+          </a>
+          <div class="product-card__content">
+            <span class="product-card__category">Трикотаж</span>
+            <h3 class="product-card__title"><a href="product.html">Кардиган из мериноса</a></h3>
+            <div class="product-card__price">21 400 ₽</div>
+          </div>
+        </article>
+        <article class="product-card">
+          <a href="product.html" class="product-card__image">
+            <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&q=80" alt="Юбка А-силуэт">
+          </a>
+          <div class="product-card__content">
+            <span class="product-card__category">Юбки</span>
+            <h3 class="product-card__title"><a href="product.html">Юбка А-силуэт, лён</a></h3>
+            <div class="product-card__price">9 800 ₽</div>
+          </div>
+        </article>
+        <article class="product-card">
+          <a href="product.html" class="product-card__image">
+            <img src="https://images.unsplash.com/photo-1564584217132-2271feaeb3c5?w=500&q=80" alt="Топ шёлковый">
+          </a>
+          <div class="product-card__content">
+            <span class="product-card__category">Топы</span>
+            <h3 class="product-card__title"><a href="product.html">Топ шёлковый «Лёгкость»</a></h3>
+            <div class="product-card__price">7 600 ₽</div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__main">
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo">
+            <svg class="footer__logo-icon" viewBox="0 0 40 40" fill="none">
+              <circle cx="20" cy="20" r="8" stroke="currentColor" stroke-width="1.5" fill="none"/>
+              <path d="M20 12C20 12 24 8 20 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M12 20C12 20 8 16 4 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M28 20C28 20 32 16 36 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="20" cy="20" r="3" fill="currentColor"/>
+            </svg>
+            <span class="footer__logo-text">Роза</span>
+          </a>
+          <p class="footer__tagline">Бутик премиум-одежды для женщин.</p>
+        </div>
+        <div class="footer__column">
+          <h4 class="footer__column-title">Магазин</h4>
+          <nav class="footer__links">
+            <a href="women.html" class="footer__link">Женское</a>
+            <a href="men.html" class="footer__link">Мужское</a>
+            <a href="collections.html" class="footer__link">Коллекции</a>
+          </nav>
+        </div>
+        <div class="footer__column">
+          <h4 class="footer__column-title">Информация</h4>
+          <nav class="footer__links">
+            <a href="about.html" class="footer__link">О бренде</a>
+            <a href="blog.html" class="footer__link">Журнал</a>
+            <a href="contacts.html" class="footer__link">Контакты</a>
+          </nav>
+        </div>
+        <div class="footer__column">
+          <h4 class="footer__column-title">Контакты</h4>
+          <div class="footer__contact-item">
+            <span>+7 (495) 123-45-67</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p class="footer__copyright">© 2026 Бутик Роза. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/components.js"></script>
+</body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="О бренде Бутик Роза. Философия элегантности, премиум качество, изысканный стиль.">
+  <title>О бренде — Бутик Роза</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header__topbar">
+      <div class="container">Бесплатная доставка при заказе от 15 000 ₽</div>
+    </div>
+    <div class="header__main">
+      <div class="container header__container">
+        <div class="header__logo">
+          <a href="index.html">
+            <svg class="header__logo-icon" viewBox="0 0 40 40" fill="none">
+              <circle cx="20" cy="20" r="8" stroke="currentColor" stroke-width="1.5" fill="none"/>
+              <path d="M20 12C20 12 24 8 20 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M12 20C12 20 8 16 4 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M28 20C28 20 32 16 36 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="20" cy="20" r="3" fill="currentColor"/>
+            </svg>
+            <div>
+              <span class="header__logo-text">Роза</span>
+              <span class="header__logo-tagline">Расцветай с нами</span>
+            </div>
+          </a>
+        </div>
+        <nav class="header__nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="women.html" class="nav-link">Женское</a></li>
+            <li class="nav-item"><a href="men.html" class="nav-link">Мужское</a></li>
+            <li class="nav-item"><a href="collections.html" class="nav-link">Коллекции</a></li>
+            <li class="nav-item"><a href="lookbook.html" class="nav-link">Lookbook</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link" style="color: var(--color-green);">О бренде</a></li>
+          </ul>
+        </nav>
+        <div class="header__actions">
+          <button class="header__action-btn" aria-label="Поиск">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="11" cy="11" r="8"/><path d="M21 21L16.65 16.65" stroke-linecap="round"/>
+            </svg>
+          </button>
+          <a href="cart.html" class="header__action-btn" aria-label="Корзина">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M6 6H4.5C3.67 6 3 6.67 3 7.5V19.5C3 20.33 3.67 21 4.5 21H19.5C20.33 21 21 20.33 21 19.5V7.5C21 6.67 20.33 6 19.5 6H18M6 6V5C6 3.34 7.34 2 9 2H15C16.66 2 18 3.34 18 5V6M6 6H18"/>
+            </svg>
+            <span class="header__cart-count">0</span>
+          </a>
+          <button class="header__menu-btn" id="menuBtn" aria-label="Меню">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="about-hero">
+      <div class="container">
+        <div class="about-hero__content">
+          <h1 class="about-hero__title">Расцветай с нами</h1>
+          <p class="about-hero__text">
+            «Бутик Роза» — это не просто магазин одежды. Это философия женственности, 
+            где каждая вещь помогает раскрыть вашу природную красоту.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="section">
+      <div class="container">
+        <div class="philosophy__grid">
+          <div class="philosophy__image">
+            <img src="https://images.unsplash.com/photo-1558171813-4c088753af8f?w=800&q=80" alt="История бренда">
+          </div>
+          <div class="philosophy__content">
+            <span class="section-header__subtitle">Наша история</span>
+            <h2 style="font-size: var(--text-3xl); margin-bottom: var(--space-6);">Почему «Роза»?</h2>
+            <p class="philosophy__text">
+              Роза — королева цветов, символ красоты и элегантности. 
+              Как роза расцветает, раскрывая лепестки навстречу солнцу, 
+              так и женщина расцветает в прекрасной одежде.
+            </p>
+            <p class="philosophy__text">
+              Мы верим, что каждая женщина заслуживает чувствовать себя особенной. 
+              Правильно подобранная одежда придаёт уверенности, 
+              подчёркивает достоинства и создаёт неповторимый образ.
+            </p>
+            <p class="philosophy__text">
+              Наш бутик создан для тех, кто ценит качество, элегантность 
+              и готов инвестировать в вещи, которые служат годами.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="section about-values bg-cream">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-header__subtitle">Ценности</span>
+          <h2 class="section-header__title">Во что мы верим</h2>
+        </div>
+        <div class="about-values__grid">
+          <div class="value-card">
+            <svg class="value-card__icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="32" cy="32" r="16"/>
+              <path d="M32 16C32 16 40 8 32 0"/>
+              <path d="M16 32C16 32 8 24 0 32"/>
+              <path d="M48 32C48 32 56 24 64 32"/>
+              <circle cx="32" cy="32" r="6" fill="currentColor"/>
+            </svg>
+            <h3 class="value-card__title">Элегантность</h3>
+            <p class="value-card__text">
+              Мы создаём одежду, которая подчёркивает вашу природную красоту. 
+              Каждая деталь продумана для создания безупречного образа.
+            </p>
+          </div>
+          <div class="value-card">
+            <svg class="value-card__icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="32" cy="32" r="20"/>
+              <path d="M24 32C24 28 28 24 32 24"/>
+              <path d="M32 24V16"/>
+              <path d="M32 48V40"/>
+              <path d="M16 32H24"/>
+              <path d="M40 32H48"/>
+            </svg>
+            <h3 class="value-card__title">Качество</h3>
+            <p class="value-card__text">
+              Мы не гонимся за трендами. Наша одежда — это инвестиция в гардероб, 
+              который будет служить вам годами, становясь только лучше.
+            </p>
+          </div>
+          <div class="value-card">
+            <svg class="value-card__icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M32 12L38 24L52 26L42 36L44 50L32 44L20 50L22 36L12 26L26 24L32 12Z"/>
+            </svg>
+            <h3 class="value-card__title">Уникальность</h3>
+            <p class="value-card__text">
+              Каждая вещь создаётся небольшими партиями. Мы ценим индивидуальность 
+              и предлагаем одежду, которая подчёркивает вашу неповторимость.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Materials Section -->
+    <section class="section">
+      <div class="container">
+        <div class="philosophy__grid">
+          <div class="philosophy__content" style="order: 1;">
+            <span class="section-header__subtitle">Материалы</span>
+            <h2 style="font-size: var(--text-3xl); margin-bottom: var(--space-6);">Только премиум</h2>
+            <p class="philosophy__text">
+              Мы тщательно отбираем каждый материал. Итальянский шёлк, французское кружево, 
+              кашемир — ткани, которые приятны к телу и подчёркивают статус.
+            </p>
+            <ul style="color: var(--color-text-secondary); line-height: var(--leading-relaxed); padding-left: var(--space-5);">
+              <li style="margin-bottom: var(--space-2);">Итальянский шёлк высшего качества</li>
+              <li style="margin-bottom: var(--space-2);">Французское кружево ручной работы</li>
+              <li style="margin-bottom: var(--space-2);">Шотландский кашемир</li>
+              <li style="margin-bottom: var(--space-2);">Японские ткани</li>
+              <li>Эксклюзивная фурнитура</li>
+            </ul>
+          </div>
+          <div class="philosophy__image" style="order: 2;">
+            <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=800&q=80" alt="Натуральные материалы">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Production Section -->
+    <section class="section bg-cream">
+      <div class="container">
+        <div class="philosophy__grid">
+          <div class="philosophy__image">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80" alt="Производство">
+          </div>
+          <div class="philosophy__content">
+            <span class="section-header__subtitle">Производство</span>
+            <h2 style="font-size: var(--text-3xl); margin-bottom: var(--space-6);">Безупречное качество</h2>
+            <p class="philosophy__text">
+              Наши изделия создаются в лучших ателье Европы, где мастера 
+              с многолетним опытом воплощают в жизнь наши идеи. 
+              Каждый шов проверяется вручную.
+            </p>
+            <p class="philosophy__text">
+              Мы создаём вещи, которые не выйдут из моды 
+              и станут основой вашего гардероба на долгие годы. 
+              Классика с современным прочтением.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section newsletter">
+      <div class="container">
+        <h2 class="newsletter__title">Расцветайте вместе с нами</h2>
+        <p class="newsletter__text">
+          Откройте для себя коллекции «Бутик Роза» и найдите вещи, 
+          которые подчеркнут вашу красоту.
+        </p>
+        <a href="collections.html" class="btn btn-primary btn-lg">Смотреть коллекции</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__main">
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo">
+            <svg class="footer__logo-icon" viewBox="0 0 40 40" fill="none">
+              <circle cx="20" cy="20" r="8" stroke="currentColor" stroke-width="1.5" fill="none"/>
+              <path d="M20 12C20 12 24 8 20 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M12 20C12 20 8 16 4 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M28 20C28 20 32 16 36 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="20" cy="20" r="3" fill="currentColor"/>
+            </svg>
+            <span class="footer__logo-text">Роза</span>
+          </a>
+          <p class="footer__tagline">Бутик премиум-одежды для женщин.</p>
+        </div>
+        <div class="footer__column">
+          <h4 class="footer__column-title">Магазин</h4>
+          <nav class="footer__links">
+            <a href="women.html" class="footer__link">Женское</a>
+            <a href="men.html" class="footer__link">Мужское</a>
+            <a href="collections.html" class="footer__link">Коллекции</a>
+          </nav>
+        </div>
+        <div class="footer__column">
+          <h4 class="footer__column-title">Информация</h4>
+          <nav class="footer__links">
+            <a href="about.html" class="footer__link">О бренде</a>
+            <a href="blog.html" class="footer__link">Журнал</a>
+            <a href="contacts.html" class="footer__link">Контакты</a>
+          </nav>
+        </div>
+        <div class="footer__column">
+          <h4 class="footer__column-title">Контакты</h4>
+          <div class="footer__contact-item">
+            <span>+7 (495) 123-45-67</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p class="footer__copyright">© 2026 Бутик Роза. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/components.js"></script>
+</body>
+</html>

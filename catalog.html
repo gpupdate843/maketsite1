@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Каталог премиум-одежды Бутик Роза. Элегантность и утончённость.">
+  <title>Каталог — Бутик Роза</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header__topbar">
+      <div class="container">Бесплатная доставка при заказе от 15 000 ₽</div>
+    </div>
+    <div class="header__main">
+      <div class="container header__container">
+        <div class="header__logo">
+          <a href="index.html">
+            <svg class="header__logo-icon" viewBox="0 0 40 40" fill="none">
+              <circle cx="20" cy="20" r="8" stroke="currentColor" stroke-width="1.5" fill="none"/>
+              <path d="M20 12C20 12 24 8 20 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M12 20C12 20 8 16 4 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M28 20C28 20 32 16 36 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="20" cy="20" r="3" fill="currentColor"/>
+            </svg>
+            <div>
+              <span class="header__logo-text">Роза</span>
+              <span class="header__logo-tagline">Расцветай с нами</span>
+            </div>
+          </a>
+        </div>
+        <nav class="header__nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="women.html" class="nav-link">Женское</a></li>
+            <li class="nav-item"><a href="men.html" class="nav-link">Мужское</a></li>
+            <li class="nav-item"><a href="collections.html" class="nav-link">Коллекции</a></li>
+            <li class="nav-item"><a href="lookbook.html" class="nav-link">Lookbook</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">О бренде</a></li>
+          </ul>
+        </nav>
+        <div class="header__actions">
+          <button class="header__action-btn" aria-label="Поиск">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="11" cy="11" r="8"/><path d="M21 21L16.65 16.65" stroke-linecap="round"/>
+            </svg>
+          </button>
+          <a href="cart.html" class="header__action-btn" aria-label="Корзина">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M6 6H4.5C3.67 6 3 6.67 3 7.5V19.5C3 20.33 3.67 21 4.5 21H19.5C20.33 21 21 20.33 21 19.5V7.5C21 6.67 20.33 6 19.5 6H18M6 6V5C6 3.34 7.34 2 9 2H15C16.66 2 18 3.34 18 5V6M6 6H18"/>
+            </svg>
+            <span class="header__cart-count">0</span>
+          </a>
+          <button class="header__menu-btn" id="menuBtn" aria-label="Меню">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="catalog-page">
+    <div class="container">
+      <!-- Breadcrumbs -->
+      <nav class="breadcrumbs" style="margin-bottom: var(--space-6);">
+        <a href="index.html">Главная</a>
+        <span class="breadcrumbs__separator">/</span>
+        <span>Каталог</span>
+      </nav>
+
+      <h1 style="font-size: var(--text-4xl); margin-bottom: var(--space-8);">Каталог</h1>
+
+      <div class="catalog__layout">
+        <!-- Sidebar Filters -->
+        <aside class="catalog__sidebar">
+          <!-- Category Filter -->
+          <div class="filter-section">
+            <h3 class="filter-section__title">Категория</h3>
+            <div class="filter-options">
+              <label class="filter-option">
+                <input type="checkbox" checked> Все товары
+              </label>
+              <label class="filter-option">
+                <input type="checkbox"> Платья
+              </label>
+              <label class="filter-option">
+                <input type="checkbox"> Блузы и рубашки
+              </label>
+              <label class="filter-option">
+                <input type="checkbox"> Брюки
+              </label>
+              <label class="filter-option">
+                <input type="checkbox"> Юбки
+              </label>
+              <label class="filter-option">
+                <input type="checkbox"> Верхняя одежда
+              </label>
+              <label class="filter-option">
+                <input type="checkbox"> Трикотаж
+              </label>
+            </div>
+          </div>
+
+          <!-- Size Filter -->
+          <div class="filter-section">
+            <h3 class="filter-section__title">Размер</h3>
+            <div class="filter-options">
+              <label class="filter-option"><input type="checkbox"> XS (40-42)</label>
+              <label class="filter-option"><input type="checkbox"> S (44)</label>
+              <label class="filter-option"><input type="checkbox"> M (46)</label>
+              <label class="filter-option"><input type="checkbox"> L (48)</label>
+              <label class="filter-option"><input type="checkbox"> XL (50)</label>
+            </div>
+          </div>
+
+          <!-- Color Filter -->
+          <div class="filter-section">
+            <h3 class="filter-section__title">Цвет</h3>
+            <div class="filter-colors">
+              <button class="filter-color" style="background-color: #FFFFFF; border: 1px solid #E5E0DB;" title="Белый"></button>
+              <button class="filter-color" style="background-color: #F5F0EB;" title="Слоновая кость"></button>
+              <button class="filter-color" style="background-color: #D4C4B5;" title="Бежевый"></button>
+              <button class="filter-color" style="background-color: #8B7355;" title="Коричневый"></button>
+              <button class="filter-color" style="background-color: #4A3728;" title="Шоколадный"></button>
+              <button class="filter-color" style="background-color: #7A9A6D;" title="Зелёный"></button>
+              <button class="filter-color" style="background-color: #C4785A;" title="Терракотовый"></button>
+              <button class="filter-color" style="background-color: #2D2D2D;" title="Чёрный"></button>
+            </div>
+          </div>
+
+          <!-- Material Filter -->
+          <div class="filter-section">
+            <h3 class="filter-section__title">Материал</h3>
+            <div class="filter-options">
+              <label class="filter-option"><input type="checkbox"> Лён</label>
+              <label class="filter-option"><input type="checkbox"> Хлопок</label>
+              <label class="filter-option"><input type="checkbox"> Шёлк</label>
+              <label class="filter-option"><input type="checkbox"> Шерсть</label>
+              <label class="filter-option"><input type="checkbox"> Tencel</label>
+              <label class="filter-option"><input type="checkbox"> Переработанные материалы</label>
+            </div>
+          </div>
+
+          <button class="btn btn-secondary" style="width: 100%;">Сбросить фильтры</button>
+        </aside>
+
+        <!-- Products Grid -->
+        <div class="catalog__content">
+          <div class="catalog__header">
+            <span class="catalog__count">Показано 12 из 48 товаров</span>
+            <button class="catalog__filter-toggle">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M4 6H20M7 12H17M10 18H14" stroke-linecap="round"/>
+              </svg>
+              Фильтры
+            </button>
+            <div class="catalog__sort">
+              <label class="catalog__sort-label">Сортировка:</label>
+              <select class="catalog__sort-select">
+                <option>По популярности</option>
+                <option>По цене (возр.)</option>
+                <option>По цене (убыв.)</option>
+                <option>Новинки</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="products__grid">
+            <!-- Product 1 -->
+            <article class="product-card">
+              <a href="product.html" class="product-card__image">
+                <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=500&q=80" alt="Шёлковое платье Пион">
+                <span class="product-card__badge">Бестселлер</span>
+              </a>
+              <div class="product-card__content">
+                <span class="product-card__category">Платья</span>
+              <h3 class="product-card__title"><a href="product.html">Шёлковое платье «Пион»</a></h3>
+              <div class="product-card__price">24 900 ₽</div>
+              </div>
+            </article>
+
+            <!-- Product 2 -->
+            <article class="product-card">
+              <a href="product.html" class="product-card__image">
+                <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=500&q=80" alt="Блуза Камелия">
+              </a>
+              <div class="product-card__content">
+                <span class="product-card__category">Блузы</span>
+              <h3 class="product-card__title"><a href="product.html">Блуза «Камелия»</a></h3>
+              <div class="product-card__price">16 500 ₽</div>
+              </div>
+            </article>
+
+            <!-- Product 3 -->
+            <article class="product-card">
+              <a href="product.html" class="product-card__image">
+                <img src="https://images.unsplash.com/photo-1506629082955-511b1aa562c8?w=500&q=80" alt="Брюки из органического хлопка">
+                <span class="product-card__badge">Эко</span>
+              </a>
+              <div class="product-card__content">
+                <span class="product-card__category">Брюки</span>
+                <h3 class="product-card__title"><a href="product.html">Брюки из органического хлопка</a></h3>
+                <div class="product-card__price">12 300 ₽</div>
+              </div>
+            </article>
+
+            <!-- Product 4 -->
+            <article class="product-card">
+              <a href="product.html" class="product-card__image">
+                <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=500&q=80" alt="Пиджак Полёт">
+              </a>
+              <div class="product-card__content">
+                <span class="product-card__category">Пиджаки</span>
+                <h3 class="product-card__title"><a href="product.html">Пиджак «Полёт»</a></h3>
+                <div class="product-card__price">28 700 ₽</div>
+              </div>
+            </article>
+
+            <!-- Product 5 -->
+            <article class="product-card">
+              <a href="product.html" class="product-card__image">
+                <img src="https://images.unsplash.com/photo-1551163943-3f6a855d1153?w=500&q=80" alt="Кардиган из мериноса">
+              </a>
+              <div class="product-card__content">
+                <span class="product-card__category">Трикотаж</span>
+                <h3 class="product-card__title"><a href="product.html">Кардиган из мериноса</a></h3>
+                <div class="product-card__price">21 400 ₽</div>
+              </div>
+            </article>
+
+            <!-- Product 6 -->
+            <article class="product-card">
+              <a href="product.html" class="product-card__image">
+                <img src="https://images.unsplash.com/photo-1583846783214-7229a91b20ed?w=500&q=80" alt="Рубашка мужская лён">
+                <span class="product-card__badge">Новинка</span>
+              </a>
+              <div class="product-card__content">
+                <span class="product-card__category">Рубашки</span>
+                <h3 class="product-card__title"><a href="product.html">Рубашка мужская, лён</a></h3>
+                <div class="product-card__price">11 200 ₽</div>
+              </div>
+            </article>
+
+            <!-- Product 7 -->
+            <article class="product-card">
+              <a href="product.html" class="product-card__image">
+                <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500&q=80" alt="Платье-миди Весна">
+              </a>
+              <div class="product-card__content">
+                <span class="product-card__category">Платья</span>
+                <h3 class="product-card__title"><a href="product.html">Платье-миди «Весна»</a></h3>
+                <div class="product-card__price">22 100 ₽</div>
+              </div>
+            </article>
+
+            <!-- Product 8 -->
+            <article class="product-card">
+              <a href="product.html" class="product-card__image">
+                <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&q=80" alt="Юбка А-силуэт">
+              </a>
+              <div class="product-card__content">
+                <span class="product-card__category">Юбки</span>
+                <h3 class="product-card__title"><a href="product.html">Юбка А-силуэт, лён</a></h3>
+                <div class="product-card__price">9 800 ₽</div>
+              </div>
+            </article>
+
+            <!-- Product 9 -->
+            <article class="product-card">
+              <a href="product.html" class="product-card__image">
+                <img src="https://images.unsplash.com/photo-1539533018447-63fcce2678e3?w=500&q=80" alt="Тренч Преображение">
+                <span class="product-card__badge">Эко</span>
+              </a>
+              <div class="product-card__content">
+                <span class="product-card__category">Верхняя одежда</span>
+                <h3 class="product-card__title"><a href="product.html">Тренч «Преображение»</a></h3>
+                <div class="product-card__price">34 500 ₽</div>
+              </div>
+            </article>
+
+            <!-- Product 10 -->
+            <article class="product-card">
+              <a href="product.html" class="product-card__image">
+                <img src="https://images.unsplash.com/photo-1562157873-818bc0726f68?w=500&q=80" alt="Рубашка оверсайз">
+              </a>
+              <div class="product-card__content">
+                <span class="product-card__category">Рубашки</span>
+                <h3 class="product-card__title"><a href="product.html">Рубашка оверсайз, хлопок</a></h3>
+                <div class="product-card__price">8 900 ₽</div>
+              </div>
+            </article>
+
+            <!-- Product 11 -->
+            <article class="product-card">
+              <a href="product.html" class="product-card__image">
+                <img src="https://images.unsplash.com/photo-1564584217132-2271feaeb3c5?w=500&q=80" alt="Топ шёлковый">
+              </a>
+              <div class="product-card__content">
+                <span class="product-card__category">Топы</span>
+                <h3 class="product-card__title"><a href="product.html">Топ шёлковый «Лёгкость»</a></h3>
+                <div class="product-card__price">7 600 ₽</div>
+              </div>
+            </article>
+
+            <!-- Product 12 -->
+            <article class="product-card">
+              <a href="product.html" class="product-card__image">
+                <img src="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?w=500&q=80" alt="Брюки чиносы">
+                <span class="product-card__badge">Новинка</span>
+              </a>
+              <div class="product-card__content">
+                <span class="product-card__category">Брюки</span>
+                <h3 class="product-card__title"><a href="product.html">Брюки чиносы, Tencel</a></h3>
+                <div class="product-card__price">13 200 ₽</div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Pagination -->
+          <nav class="pagination">
+            <button class="pagination-btn" disabled>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M15 18L9 12L15 6" stroke-linecap="round"/>
+              </svg>
+            </button>
+            <button class="pagination-btn active">1</button>
+            <button class="pagination-btn">2</button>
+            <button class="pagination-btn">3</button>
+            <span class="pagination-ellipsis">...</span>
+            <button class="pagination-btn">8</button>
+            <button class="pagination-btn">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 18L15 12L9 6" stroke-linecap="round"/>
+              </svg>
+            </button>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" style="margin-top: var(--space-16);">
+    <div class="container">
+      <div class="footer__main">
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo">
+            <svg class="footer__logo-icon" viewBox="0 0 40 40" fill="none">
+              <circle cx="20" cy="20" r="8" stroke="currentColor" stroke-width="1.5" fill="none"/>
+              <path d="M20 12C20 12 24 8 20 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M12 20C12 20 8 16 4 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M28 20C28 20 32 16 36 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="20" cy="20" r="3" fill="currentColor"/>
+            </svg>
+            <span class="footer__logo-text">Роза</span>
+          </a>
+          <p class="footer__tagline">Бутик премиум-одежды для женщин.</p>
+        </div>
+        <div class="footer__column">
+          <h4 class="footer__column-title">Магазин</h4>
+          <nav class="footer__links">
+            <a href="women.html" class="footer__link">Женское</a>
+            <a href="men.html" class="footer__link">Мужское</a>
+            <a href="collections.html" class="footer__link">Коллекции</a>
+          </nav>
+        </div>
+        <div class="footer__column">
+          <h4 class="footer__column-title">Информация</h4>
+          <nav class="footer__links">
+            <a href="about.html" class="footer__link">О бренде</a>
+            <a href="blog.html" class="footer__link">Журнал</a>
+            <a href="contacts.html" class="footer__link">Контакты</a>
+          </nav>
+        </div>
+        <div class="footer__column">
+          <h4 class="footer__column-title">Контакты</h4>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18">
+              <path d="M22 16.92V19.92C22 20.48 21.56 20.93 21 20.98C20.83 21 20.66 21 20.5 21C10.84 21 3 13.16 3 3.5C3 3.34 3 3.17 3.02 3C3.07 2.44 3.52 2 4.08 2H7.08"/>
+            </svg>
+            <span>+7 (495) 123-45-67</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p class="footer__copyright">© 2026 Бутик Роза. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/components.js"></script>
+</body>
+</html>

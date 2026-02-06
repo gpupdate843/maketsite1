@@ -1,0 +1,620 @@
+/* ============================================
+   Роза — Responsive Styles
+   ============================================ */
+
+/* ========== Mobile First Adjustments ========== */
+
+/* Typography - Mobile */
+@media (max-width: 767px) {
+  h1 {
+    font-size: var(--text-3xl);
+  }
+  
+  h2 {
+    font-size: var(--text-2xl);
+  }
+  
+  h3 {
+    font-size: var(--text-xl);
+  }
+  
+  .section {
+    padding-block: var(--space-10);
+  }
+  
+  .container {
+    padding-inline: var(--space-4);
+  }
+}
+
+/* ========== Header Responsive ========== */
+
+@media (max-width: 1023px) {
+  .header__nav {
+    display: none;
+  }
+  
+  .header__logo-tagline {
+    display: none;
+  }
+  
+  .header__container {
+    gap: var(--space-4);
+  }
+}
+
+@media (max-width: 767px) {
+  .header__topbar {
+    font-size: 11px;
+    padding: var(--space-1) 0;
+  }
+  
+  .header__main {
+    padding: var(--space-3) 0;
+  }
+  
+  .header__logo-text {
+    font-size: var(--text-xl);
+  }
+  
+  .header__logo-icon {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .header__action-btn {
+    width: 36px;
+    height: 36px;
+  }
+  
+  .header__action-btn svg {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .header__actions {
+    gap: var(--space-2);
+  }
+}
+
+/* ========== Hero Responsive ========== */
+
+@media (max-width: 1023px) {
+  .hero {
+    min-height: 70vh;
+  }
+  
+  .hero__content {
+    max-width: 100%;
+    padding: var(--space-6);
+  }
+  
+  .hero__overlay {
+    background: linear-gradient(
+      to bottom,
+      rgba(250, 248, 245, 0.9) 0%,
+      rgba(250, 248, 245, 0.7) 100%
+    );
+  }
+}
+
+@media (max-width: 767px) {
+  .hero {
+    min-height: 60vh;
+  }
+  
+  .hero__title {
+    font-size: var(--text-4xl);
+  }
+  
+  .hero__description {
+    font-size: var(--text-base);
+  }
+  
+  .hero__actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .hero__actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .hero__decoration {
+    display: none;
+  }
+}
+
+/* ========== Philosophy/Grid Sections ========== */
+
+@media (max-width: 1023px) {
+  .philosophy__grid {
+    gap: var(--space-8);
+  }
+  
+  .philosophy__content {
+    max-width: 100%;
+  }
+  
+  .philosophy__image-decoration {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .philosophy__quote {
+    font-size: var(--text-2xl);
+  }
+}
+
+/* ========== Categories Grid ========== */
+
+@media (max-width: 1023px) {
+  .categories__grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .categories__grid {
+    grid-template-columns: 1fr !important;
+    gap: var(--space-4);
+  }
+  
+  .category-card {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+/* ========== Products Grid ========== */
+
+@media (max-width: 1199px) {
+  .products__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .products__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+  }
+  
+  .product-card__title {
+    font-size: var(--text-base);
+  }
+  
+  .product-card__price {
+    font-size: var(--text-sm);
+  }
+  
+  .product-card__badge {
+    font-size: 10px;
+    padding: var(--space-1) var(--space-2);
+  }
+}
+
+/* ========== Section Headers ========== */
+
+@media (max-width: 767px) {
+  .section-header {
+    margin-bottom: var(--space-8);
+  }
+  
+  .section-header__title {
+    font-size: var(--text-2xl);
+  }
+  
+  .section-header__description {
+    font-size: var(--text-sm);
+  }
+}
+
+/* ========== Newsletter ========== */
+
+@media (max-width: 767px) {
+  .newsletter__title {
+    font-size: var(--text-2xl);
+  }
+  
+  .newsletter__icon {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+/* ========== Catalog Page ========== */
+
+@media (max-width: 1023px) {
+  .catalog__layout {
+    grid-template-columns: 1fr;
+  }
+  
+  .catalog__sidebar {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .catalog__header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--space-3);
+  }
+  
+  .catalog__sort {
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .catalog__sort-select {
+    flex: 1;
+  }
+  
+  .catalog__filter-toggle {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* ========== Product Page ========== */
+
+@media (max-width: 1023px) {
+  .product__layout {
+    gap: var(--space-8);
+  }
+}
+
+@media (max-width: 767px) {
+  .product__gallery-thumbs {
+    gap: var(--space-2);
+  }
+  
+  .product__gallery-thumb {
+    width: 60px;
+    height: 75px;
+  }
+  
+  .product__title {
+    font-size: var(--text-2xl);
+  }
+  
+  .product__price {
+    font-size: var(--text-xl);
+  }
+  
+  .product__actions {
+    flex-direction: column;
+  }
+  
+  .product__actions .btn {
+    width: 100%;
+    min-width: auto;
+  }
+  
+  .product__sizes {
+    gap: var(--space-2);
+  }
+  
+  .product__size {
+    min-width: 40px;
+    height: 40px;
+    font-size: var(--text-sm);
+  }
+}
+
+/* ========== Cart Page ========== */
+
+@media (max-width: 1023px) {
+  .cart__layout {
+    gap: var(--space-8);
+  }
+  
+  .cart__summary {
+    position: static;
+  }
+}
+
+@media (max-width: 767px) {
+  .cart-item {
+    grid-template-columns: 80px 1fr;
+    gap: var(--space-3);
+  }
+  
+  .cart-item .quantity-selector {
+    grid-column: 2;
+    width: fit-content;
+  }
+  
+  .cart-item__price {
+    grid-column: 2;
+    text-align: left;
+  }
+  
+  .cart-item__title {
+    font-size: var(--text-base);
+  }
+  
+  .cart__summary {
+    padding: var(--space-6);
+  }
+}
+
+/* ========== About Page ========== */
+
+@media (max-width: 767px) {
+  .about-hero {
+    min-height: auto;
+    padding: var(--space-16) 0;
+  }
+  
+  .about-hero__title {
+    font-size: var(--text-3xl);
+  }
+  
+  .about-hero__text {
+    font-size: var(--text-base);
+  }
+  
+  .about-values__grid {
+    gap: var(--space-8);
+  }
+  
+  .value-card__icon {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+/* ========== Lookbook ========== */
+
+@media (max-width: 767px) {
+  .lookbook__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-2);
+  }
+  
+  .lookbook__item--wide {
+    grid-column: span 2;
+  }
+  
+  .lookbook__item--tall {
+    grid-row: span 1;
+  }
+}
+
+/* ========== Blog ========== */
+
+@media (max-width: 767px) {
+  .blog__grid {
+    gap: var(--space-6);
+  }
+  
+  .blog-card__title {
+    font-size: var(--text-lg);
+  }
+}
+
+/* ========== Contact Page ========== */
+
+@media (max-width: 1023px) {
+  .contact__layout {
+    gap: var(--space-8);
+  }
+}
+
+@media (max-width: 767px) {
+  .contact__title {
+    font-size: var(--text-2xl);
+  }
+  
+  .contact__form-wrapper {
+    padding: var(--space-6);
+  }
+  
+  .contact__map {
+    height: 250px;
+  }
+}
+
+/* ========== Collections ========== */
+
+@media (max-width: 767px) {
+  .collections__grid {
+    gap: var(--space-4);
+  }
+  
+  .collection-card {
+    aspect-ratio: 1 / 1;
+  }
+  
+  .collection-card__title {
+    font-size: var(--text-2xl);
+  }
+  
+  .collection-card__overlay {
+    padding: var(--space-5);
+  }
+}
+
+/* ========== Footer ========== */
+
+@media (max-width: 1023px) {
+  .footer__main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .footer__brand {
+    grid-column: span 2;
+    max-width: 100%;
+    margin-bottom: var(--space-6);
+  }
+}
+
+@media (max-width: 767px) {
+  .footer {
+    padding-top: var(--space-10);
+  }
+  
+  .footer__main {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+  
+  .footer__brand {
+    grid-column: span 1;
+  }
+  
+  .footer__column-title {
+    margin-bottom: var(--space-3);
+  }
+  
+  .footer__bottom-inner {
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+  
+  .footer__legal {
+    flex-direction: column;
+    gap: var(--space-2);
+    align-items: center;
+  }
+}
+
+/* ========== Buttons ========== */
+
+@media (max-width: 767px) {
+  .btn-lg {
+    padding: var(--space-3) var(--space-6);
+    font-size: var(--text-sm);
+  }
+}
+
+/* ========== Pagination ========== */
+
+@media (max-width: 480px) {
+  .pagination {
+    gap: var(--space-1);
+  }
+  
+  .pagination-btn {
+    min-width: 36px;
+    height: 36px;
+    font-size: var(--text-xs);
+  }
+  
+  .pagination-ellipsis {
+    display: none;
+  }
+}
+
+/* ========== Forms ========== */
+
+@media (max-width: 767px) {
+  .form-input,
+  .form-textarea,
+  .form-select {
+    padding: var(--space-3);
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+}
+
+/* ========== Breadcrumbs ========== */
+
+@media (max-width: 767px) {
+  .breadcrumbs {
+    font-size: var(--text-xs);
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: var(--space-2);
+  }
+}
+
+/* ========== Accordion ========== */
+
+@media (max-width: 767px) {
+  .accordion-header {
+    padding: var(--space-4) 0;
+    font-size: var(--text-sm);
+  }
+  
+  .accordion-content__inner {
+    font-size: var(--text-sm);
+  }
+}
+
+/* ========== Quantity Selector ========== */
+
+@media (max-width: 480px) {
+  .quantity-selector button {
+    width: 36px;
+    height: 36px;
+  }
+  
+  .quantity-selector input {
+    width: 40px;
+    height: 36px;
+  }
+}
+
+/* ========== Print Styles ========== */
+
+@media print {
+  .header,
+  .footer,
+  .mobile-nav,
+  .search-overlay,
+  .newsletter,
+  .btn {
+    display: none !important;
+  }
+  
+  body {
+    font-size: 12pt;
+    color: black;
+    background: white;
+  }
+  
+  a {
+    color: black;
+    text-decoration: underline;
+  }
+  
+  .container {
+    max-width: 100%;
+    padding: 0;
+  }
+}
+
+/* ========== Utility: Hide on specific breakpoints ========== */
+
+@media (max-width: 767px) {
+  .hide-mobile {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .hide-tablet {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hide-desktop {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1023px) {
+  .show-desktop-only {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .show-mobile-only {
+    display: none !important;
+  }
+}

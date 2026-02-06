@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Тематические коллекции премиум-одежды. Пион, Орхидея, Магнолия. Бутик Роза.">
+  <title>Коллекции — Бутик Роза</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header__topbar">
+      <div class="container">Бесплатная доставка при заказе от 15 000 ₽</div>
+    </div>
+    <div class="header__main">
+      <div class="container header__container">
+        <div class="header__logo">
+          <a href="index.html">
+            <svg class="header__logo-icon" viewBox="0 0 40 40" fill="none">
+              <circle cx="20" cy="20" r="8" stroke="currentColor" stroke-width="1.5" fill="none"/>
+              <path d="M20 12C20 12 24 8 20 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M12 20C12 20 8 16 4 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M28 20C28 20 32 16 36 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="20" cy="20" r="3" fill="currentColor"/>
+            </svg>
+            <div>
+              <span class="header__logo-text">Роза</span>
+              <span class="header__logo-tagline">Расцветай с нами</span>
+            </div>
+          </a>
+        </div>
+        <nav class="header__nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="women.html" class="nav-link">Женское</a></li>
+            <li class="nav-item"><a href="men.html" class="nav-link">Мужское</a></li>
+            <li class="nav-item"><a href="collections.html" class="nav-link" style="color: var(--color-green);">Коллекции</a></li>
+            <li class="nav-item"><a href="lookbook.html" class="nav-link">Lookbook</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">О бренде</a></li>
+          </ul>
+        </nav>
+        <div class="header__actions">
+          <button class="header__action-btn" aria-label="Поиск">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="11" cy="11" r="8"/><path d="M21 21L16.65 16.65" stroke-linecap="round"/>
+            </svg>
+          </button>
+          <a href="cart.html" class="header__action-btn" aria-label="Корзина">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M6 6H4.5C3.67 6 3 6.67 3 7.5V19.5C3 20.33 3.67 21 4.5 21H19.5C20.33 21 21 20.33 21 19.5V7.5C21 6.67 20.33 6 19.5 6H18M6 6V5C6 3.34 7.34 2 9 2H15C16.66 2 18 3.34 18 5V6M6 6H18"/>
+            </svg>
+            <span class="header__cart-count">0</span>
+          </a>
+          <button class="header__menu-btn" id="menuBtn" aria-label="Меню">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="section" style="padding-top: var(--space-12);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-header__subtitle">Наши коллекции</span>
+          <h1 class="section-header__title" style="font-size: var(--text-5xl);">Цветущий сад стиля</h1>
+          <p class="section-header__description">
+            Каждая коллекция — это уникальный цветок в нашем саду моды. Найдите свой аромат элегантности.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Collections Grid -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="collections__grid">
+          <!-- Pion Collection -->
+          <a href="catalog.html" class="collection-card">
+            <img src="https://images.unsplash.com/photo-1558171813-4c088753af8f?w=800&q=80" alt="Коллекция Пион" class="collection-card__image">
+            <div class="collection-card__overlay">
+              <h2 class="collection-card__title">Пион</h2>
+              <span class="collection-card__count">24 модели</span>
+            </div>
+          </a>
+
+          <!-- Orchid Collection -->
+          <a href="catalog.html" class="collection-card">
+            <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800&q=80" alt="Коллекция Орхидея" class="collection-card__image">
+            <div class="collection-card__overlay">
+              <h2 class="collection-card__title">Орхидея</h2>
+              <span class="collection-card__count">31 модель</span>
+            </div>
+          </a>
+
+          <!-- Magnolia Collection -->
+          <a href="catalog.html" class="collection-card">
+            <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?w=800&q=80" alt="Коллекция Магнолия" class="collection-card__image">
+            <div class="collection-card__overlay">
+              <h2 class="collection-card__title">Магнолия</h2>
+              <span class="collection-card__count">18 моделей</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pion Description -->
+    <section class="section bg-cream">
+      <div class="container">
+        <div class="philosophy__grid">
+          <div class="philosophy__image">
+            <img src="https://images.unsplash.com/photo-1558171813-4c088753af8f?w=800&q=80" alt="Коллекция Пион">
+          </div>
+          <div class="philosophy__content">
+            <span class="section-header__subtitle">Коллекция</span>
+            <h2 style="font-size: var(--text-3xl); margin-bottom: var(--space-6);">Пион</h2>
+            <p class="philosophy__text">
+              Коллекция «Пион» — это воплощение нежности и романтики. Пышные силуэты, 
+              мягкие драпировки и изысканные детали. Оттенки пудры, 
+              румянца и нежного розового.
+            </p>
+            <p class="philosophy__text">
+              Каждая вещь этой коллекции создана для особых моментов — 
+              свиданий, торжеств и просто для хорошего настроения.
+            </p>
+            <a href="catalog.html" class="btn btn-outline">Смотреть коллекцию</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Orchid Description -->
+    <section class="section">
+      <div class="container">
+        <div class="philosophy__grid">
+          <div class="philosophy__content" style="order: 1;">
+            <span class="section-header__subtitle">Коллекция</span>
+            <h2 style="font-size: var(--text-3xl); margin-bottom: var(--space-6);">Орхидея</h2>
+            <p class="philosophy__text">
+              Экзотическая элегантность коллекции «Орхидея». Утончённые линии, 
+              сложные конструкции, игра асимметрии. Для тех, кто не боится 
+              выделяться и ценит изысканность.
+            </p>
+            <p class="philosophy__text">
+              Глубокие оттенки бордо, фуксии и тёмного шоколада 
+              создают образ уверенной и стильной женщины.
+            </p>
+            <a href="catalog.html" class="btn btn-outline">Смотреть коллекцию</a>
+          </div>
+          <div class="philosophy__image" style="order: 2;">
+            <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800&q=80" alt="Коллекция Орхидея">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Magnolia Description -->
+    <section class="section bg-cream">
+      <div class="container">
+        <div class="philosophy__grid">
+          <div class="philosophy__image">
+            <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?w=800&q=80" alt="Коллекция Магнолия">
+          </div>
+          <div class="philosophy__content">
+            <span class="section-header__subtitle">Коллекция</span>
+            <h2 style="font-size: var(--text-3xl); margin-bottom: var(--space-6);">Магнолия</h2>
+            <p class="philosophy__text">
+              Благородная простота коллекции «Магнолия». Классические силуэты, 
+              безупречный крой, премиальные ткани. 
+              Одежда вне времени для истинных ценителей.
+            </p>
+            <p class="philosophy__text">
+              Палитра коллекции — элегантная классика: слоновая кость, 
+              нежный беж, пудра, жемчужный серый. Утончённость в каждой детали.
+            </p>
+            <a href="catalog.html" class="btn btn-outline">Смотреть коллекцию</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__main">
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo">
+            <svg class="footer__logo-icon" viewBox="0 0 40 40" fill="none">
+              <circle cx="20" cy="20" r="8" stroke="currentColor" stroke-width="1.5" fill="none"/>
+              <path d="M20 12C20 12 24 8 20 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M12 20C12 20 8 16 4 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M28 20C28 20 32 16 36 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="20" cy="20" r="3" fill="currentColor"/>
+            </svg>
+            <span class="footer__logo-text">Роза</span>
+          </a>
+          <p class="footer__tagline">Бутик премиум-одежды для женщин.</p>
+        </div>
+        <div class="footer__column">
+          <h4 class="footer__column-title">Магазин</h4>
+          <nav class="footer__links">
+            <a href="women.html" class="footer__link">Женское</a>
+            <a href="men.html" class="footer__link">Мужское</a>
+            <a href="collections.html" class="footer__link">Коллекции</a>
+          </nav>
+        </div>
+        <div class="footer__column">
+          <h4 class="footer__column-title">Информация</h4>
+          <nav class="footer__links">
+            <a href="about.html" class="footer__link">О бренде</a>
+            <a href="blog.html" class="footer__link">Журнал</a>
+            <a href="contacts.html" class="footer__link">Контакты</a>
+          </nav>
+        </div>
+        <div class="footer__column">
+          <h4 class="footer__column-title">Контакты</h4>
+          <div class="footer__contact-item">
+            <span>+7 (495) 123-45-67</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p class="footer__copyright">© 2026 Бутик Роза. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/components.js"></script>
+</body>
+</html>
